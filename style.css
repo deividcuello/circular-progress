@@ -16,10 +16,6 @@ body{
     padding: 0.5rem;
 }
 
-.container{
-    position: relative;
-}
-
 span{
     display: inline-block;
     width: 1rem;
