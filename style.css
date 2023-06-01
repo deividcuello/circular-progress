@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(8, 8, 8);
+    font-family: 'Poppins', sans-serif;
+    padding: 0.5rem;
+}
+
+.container{
+    position: relative;
+}
+
+span{
+    display: inline-block;
+    width: 1rem;
+    height: 0.1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(33, 33, 33);
+}
+
+@keyframes progress {
+    0%{
+        background-color: rgb(33, 33, 33);
+    }
+    100%{
+        background-color: rgb(0, 255, 0);
+    }
+}
+
+.line-container{
+    width: 12rem;
+    height: 12rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    left: 0.7rem;
+    color: rgb(255, 255, 255);
+}
+
+.progress{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media only screen and (max-width: 870px) {
+    .progress {
+      grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    .progress {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .progress {
+      grid-template-columns: 1fr;
+    }
+}
