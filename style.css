@@ -29,10 +29,10 @@ span{
 
 @keyframes progress {
     0%{
-        background:rgb(128, 128, 128)
+        background:rgb(0, 255, 0);
     }
     100%{
-        background:linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+        background: rgb(33, 33, 33);
     }
 }
 

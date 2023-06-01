@@ -16,7 +16,7 @@ const generateLines = () =>{
         for (let index = 0; index < lines; index++) {
             const element = document.createElement('span')
             html += `
-            <span style='transform: rotate(${rotate}deg) translate(-70px); ${index < elementTemp ? `animation: progress 1s linear ${index/50}s infinite alternate`: ''};'></span>
+            <span style='transform: rotate(${rotate}deg) translate(-70px); ${index < elementTemp ? `animation: progress 0.05s linear ${index/50}s infinite alternate`: ''};'></span>
             `
             rotate += rotateTemp
         }
